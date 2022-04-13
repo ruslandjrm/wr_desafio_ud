@@ -96,7 +96,6 @@ class Example_List_Table extends WP_List_Table {
 
        
             foreach($dataLinks as $key => $link) {
-                echo $key.'--'.$link['href'];
                 if (strpos($link['href'], ' ') !== false) {
                     $errorCode = "%20".trim($link['href']);
                     $errorLinkType = "Enlace malformado";
